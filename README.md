@@ -5,7 +5,7 @@ Aquest projecte mostra com simular l'ús d'**AWS Secrets Manager** en entorns **
 ## Arquitectura
 
 - **secrets-emulator**: contenidor que simula AWS Secrets Manager.
-- **app**: sidecar.py (o script equivalent), que no està en el projecte però que pots crear tu. Aquest script és el que consulta secrets a l’emulador via API (usant AWS CLI o boto3) i els escriu a /secrets/*.json.
+- **app**: sidecar.py (o script equivalent), que no està en el projecte però que pots crear tu. Aquest script és el que consulta secrets a l’emulador via API (usant AWS CLI o boto3).
 
 Aquest comportament és el que simula el sidecar. Què seria un Sidecar (real)? En arquitectura de contenidors (Docker, Kubernetes...), un sidecar és un contenidor que: s’executa al costat del contenidor principal (la teua aplicació) i fa funcions de suport (logging, secrets, monitorització...)
 
