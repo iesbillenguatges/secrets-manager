@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  secrets-emulator:
+    image: skarpdev/aws-secrets-manager-emulator:0.4.1
+    container_name: secrets-emulator
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./secrets-preload:/preload
+    environment:
+      - SECRETS_MANAGER_PORT=3000
+      - SECRETS_MANAGER_PRELOAD_DIRECTORY=/preload
