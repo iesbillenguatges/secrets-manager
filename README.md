@@ -2,6 +2,16 @@
 
 Aquest projecte mostra com simular l'ús d'**AWS Secrets Manager** en entorns **locals** utilitzant l'emulador [`skarpdev/aws-secrets-manager-emulator`](https://hub.docker.com/r/skarpdev/aws-secrets-manager-emulator).
 
+## 🔑 Què és AWS Secrets Manager?
+És un servei d’AWS que permet emmagatzemar, gestionar i rotar credencials sensibles de manera segura.
+
+Què pots guardar-hi?
+
+- Contrasenyes de bases de dades
+- Claus d’API
+- Tokens d’aplicacions
+- Credencials de serveis externs
+
 ## Arquitectura
 
 - **secrets-emulator**: contenidor que simula AWS Secrets Manager.
